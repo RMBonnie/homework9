@@ -9,7 +9,7 @@ const { meal } = defineProps({
 
 <template>
     <div class="bg-white shasow rounded-xl">
-        <RouterLink :to="{}">
+        <RouterLink :to="{name:'MealDetails', params: {id: meal.idMeal}}">
             <img :src="meal.strMealThumb" class="rounded-t-xl h-48 object-cover w-full"/>
         </RouterLink>
         <div class="p-3">
