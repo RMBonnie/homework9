@@ -5,7 +5,7 @@ const { api } = useAPI()
 export function searchMeal({ commit }, keyword) {
     api.get(`search.php?s=${keyword}`)
         .then(({ data }) => {
-        commit(`setSearchedMeals`, data.meals)
+        commit('setSearchedMeals', data.meals)
     })
 }
 
