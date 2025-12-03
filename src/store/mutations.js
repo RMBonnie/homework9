@@ -6,6 +6,6 @@ export function setMealsByLetter(state, meals) {
     state.MealsByLetter = meals || []
 }
 
-export function setMealsByIngredients(state, meals) {
-    state.MealsByIngredients = meals || []
+export function setMealsByIngredient(state, meals) {
+    state.mealsByIngredient = meals || []
 }
