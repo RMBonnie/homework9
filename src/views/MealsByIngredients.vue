@@ -1,11 +1,11 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import store from '../store'
 import Meals from '../components/Meals.vue'
 
 const meals = computed(() => store.state.mealsByIngredient)
-const ingredient = computed(() => store.state.Ingredients)
+// const ingredient = computed(() => store.state.Ingredients)
 const route = useRoute()
 
 onMounted(() => {
